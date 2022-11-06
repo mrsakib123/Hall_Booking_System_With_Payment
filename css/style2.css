@@ -1,0 +1,421 @@
+/* General body styling */
+
+/* sidenav */
+
+/* The sidebar menu */
+.sidenav {
+  height: 100%; /* Full-height: remove this if you want "auto" height */
+  width: 180px; /* Set the width of the sidebar */
+  position: fixed; /* Fixed Sidebar (stay in place on scroll) */
+  z-index: 1; /* Stay on top */
+  top: 0; /* Stay at the top */
+  left: 0;
+  background-color: #111; /* Black */
+  overflow-x: hidden; /* Disable horizontal scroll */
+  padding-top: 20px;
+  font-size: 16px;
+}
+
+/* The navigation menu links */
+.sidenav a {
+  padding: 3px 8px 3px 16px;
+  text-decoration: none;
+  font-size: 16px;
+  color: #90907A;
+  display: block;
+}
+.sidenav li {
+	font-size: 16px;
+	
+}
+
+/* When you mouse over the navigation links, change their color */
+.sidenav a:hover {
+  color: #f1f1f1;
+}
+
+.nav-submenu a {
+	font-size: 14px;
+}
+
+
+
+/* Style page content */
+.main {
+  margin-left: 160px; /* Same as the width of the sidebar */
+  padding: 0px 10px;
+}
+
+/* On smaller screens, where height is less than 450px, change the style of the sidebar (less padding and a smaller font size) */
+@media screen and (max-height: 450px) {
+  .sidenav {padding-top: 15px;}
+  .sidenav a {font-size: 16px;}
+}
+
+
+/* SIDENAV ENDS */
+
+
+
+.logo {
+	font-weight: bold;
+	
+}
+#main-container{
+	background-color: green;
+	opacity: 90%;
+}
+
+
+
+  
+ 
+ul{
+	color: white;
+}
+.login {
+	padding-left: 5px;
+	position: relative;
+	list-style-type: none;
+	margin: 0;
+	padding: 0;
+	font-family: Georgia;
+	
+	font-size: 18px;
+	color: white;
+}
+.login a:link{
+	color: yellow;
+	font-weight: bold;
+}
+.login a:visited{
+	color: yellow;
+}		
+body
+{
+   /* max-width:1200px; */
+  
+   width:80%;
+   margin:0 auto;
+   padding:2% 0;
+   font-size:75%;
+   font-family: Georgia, "Times New Roman", serif;
+
+   /* Provide a background color for older/dumber browsers */
+    background-color:#446B12;   
+   
+   
+   
+   background-image: url('../images/oo.jpg');
+   background-repeat: no-repeat;
+   background-size: 2500px;
+}
+
+
+/* Start header */
+
+   header h1 { margin:0; text-align:center;}
+   header h1 a
+   {
+      margin:0 auto;
+      
+      /* Set font to non-standard font */
+      font-family: 'Marck Script', cursive;
+      text-decoration:none;
+      font-size:300%;
+      text-align:center;
+      color:white;
+      
+      /* Add a slight border around the text */
+      text-shadow:5px 5px 10px #0F3F13,
+                  1px 1px 2px #0F3F13,
+                  1px -1px 2px #0F3F13,
+                  -1px -1px 2px #0F3F13,
+                  -1px 1px 2px #0F3F13;
+   }
+/* End header */
+   
+/*** Start nav#mainigation ***/
+   nav#main
+   {
+	   
+      background-color:#0F3F13;
+	
+		
+      /* Round the top corners of the nav#main */
+      -webkit-border-radius:15px 15px 0 0;
+      -moz-border-radius:15px 15px 0 0;
+      -o-border-radius:15px 15px 0 0;
+      -ms-border-radius:15px 15px 0 0;
+      border-radius:15px 15px 0 0;
+
+      font-size:160%;
+      position:relative;
+   }
+
+
+   /* Fill in the space between the nav#mainigation and the content (left side) */
+   nav#main:before
+   {
+      content:'';
+      display:block;
+      position:absolute;
+      width:15px;
+      height:15px;
+	  
+      background-color:#0F3F13;
+	  
+      top: 100%;
+      left: 0;
+	  color: white;
+   }
+
+   /* Fill in the space between the nav#mainigation and the content (right side) */
+   nav#main:after
+   {
+      content:'';
+      display:block;
+      position:absolute;
+      width:15px;
+      height:15px;
+	  
+      background-color:#0F3F13;
+	  
+      top: 100%;
+      right:0;
+   }
+
+
+   nav#main ul
+   {
+      margin:0 0 0 1%;
+      padding:10px 0 0 0;
+      overflow:auto;
+      min-height:100px;
+   }
+
+   nav#main li
+   {
+      display:block;
+      float:left;
+      width:24%;
+      margin:0;
+      padding:0;
+      padding-top:80px;
+      margin-right:1%;
+      position:relative;
+
+      /* Add transition for modern browsers */
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -o-transition: all .2s;
+      -ms-transition: all .2s;
+      transition: all .2s;
+   }
+
+
+   /* Arrow */
+   nav#main li:before
+   {
+      content:'';
+      display:block;
+      position:absolute;
+      z-index:1;
+      width:0;
+      height:0;
+      border:20px solid transparent;
+      border-bottom-color:#F78203;
+      top:40px;
+      
+      /* Set position for older browsers (approx. centered) */
+      left:45%;
+
+      /* Set position for modern browsers (centered) */
+      left: -webkit-calc(50% - 20px);
+      left: -moz-calc(50% - 20px);
+      left: calc(50% - 20px);
+   }
+
+   nav#main li a
+   {
+      display:block;
+      width:100%;
+      height:40px;
+      line-height:30px;
+      text-align:center;
+      color:#fff;
+      background-color:#F78203;
+      
+      /* Rounded corners on pop-up nav#main tabs */
+      border-radius:15px 15px 0 0;
+      font-weight:bold;
+      font-family: 'Vollkorn', serif;
+      text-decoration:none;
+      position:relative;
+      z-index:10;
+      background-position:50% 50px;
+      background-repeat:no-repeat;
+      cursor:pointer;
+      
+      /* Add transition for modern browser */
+      -webkit-transition: all .2s;
+      -moz-transition: all .2s;
+      -o-transition: all .2s;
+      -ms-transition: all .2s;
+      transition: all .2s;
+   }
+
+   nav#main li:hover,
+   nav#main li.current
+   {
+      padding-top:0;
+   }
+
+   nav#main li:hover a,
+   nav#main li.current a
+   {
+      height:120px;
+      background-color:#fff;
+      color:#F78203;
+   }
+
+   /* Hide the nav#main pop-up arrow on hover */
+   nav#main li:hover:before,
+   nav#main li.current:before
+   {
+      border-bottom-color:transparent;
+   }
+
+   nav#main li:hover:after,
+   nav#main li.current:after
+   {
+      background-color:transparent;
+   }
+
+   /* Set background image and gradient for pop-up nav#main tabs */
+   
+   nav#main li.home:hover a
+   {
+      background-image: url('../images/home.png'), -webkit-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/home.png'),    -moz-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/home.png'),     -ms-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/home.png'),      -o-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/home.png'),         linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      
+      background-position: 50% 100%, 0 0;
+      background-repeat: no-repeat, repeat-x;
+   }
+   
+   nav#main li.lions:hover a
+   {
+      background-image: url('../images/lion.png'), -webkit-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/lion.png'),    -moz-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/lion.png'),     -ms-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/lion.png'),      -o-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/lion.png'),         linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      
+      background-position: 50% 100%, 0 0;
+      background-repeat: no-repeat, repeat-x;
+   }
+   
+   nav#main li.tigers:hover a
+   {
+      background-image: url('../images/tiger.png'), -webkit-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/tiger.png'),    -moz-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/tiger.png'),     -ms-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/tiger.png'),      -o-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/tiger.png'),         linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      
+      background-position: 50% 100%, 0 0;
+      background-repeat: no-repeat, repeat-x;
+   }
+   
+   nav#main li.bears:hover a
+   {
+      background-image: url('../images/bear.png'), -webkit-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/bear.png'),    -moz-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/bear.png'),     -ms-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/bear.png'),      -o-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/bear.png'),         linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      
+      background-position: 50% 100%, 0 0;
+      background-repeat: no-repeat, repeat-x;
+   }
+   
+   nav#main li.ohmy:hover a
+   {
+      background-image: url('../images/ohmy.png'), -webkit-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/ohmy.png'),    -moz-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/ohmy.png'),     -ms-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/ohmy.png'),      -o-linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      background-image: url('../images/ohmy.png'),         linear-gradient(#fff 0%,#fff 30%, #F78203 90%);
+      
+      background-position: 50% 100%, 0 0;
+      background-repeat: no-repeat, repeat-x;
+   }
+
+/*** End nav#mainigation ***/
+
+
+/*** Start main content ***/
+#content
+{
+   background-color:white;
+   padding:1% 2%;
+   padding-bottom:4%;
+   border:5px solid #0F3F13;
+   border-radius:15px;
+   font-size:150%;
+   position:relative;
+   z-index:400;
+   font-family: Verdana, Helvetica, Arial, sans-serif;
+   line-height:150%;
+}
+
+/* Front page image */
+#content div.frontImgs
+{
+   text-align: center;
+}
+
+#content div.frontImgs img
+{
+   display:block;
+   max-width: 100%;
+}
+
+/* Basic page styling */
+#content h1 {
+   color:#0F3F13;
+   font-size:150%;
+   font-family:Georgia, "Times New Roman", serif;
+   padding-top:10px;
+   width: 800px;
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+}
+
+#content p {
+   width: 800px;
+   margin-left:auto;
+   margin-right:auto;
+   text-align:center;
+}
+
+/*** End main content ***/
+
+
+/*** Start footer ***/
+footer
+{
+   padding:0 42px;
+   min-height:50px;
+   font-size:150%;
+   line-height:150%;
+   text-align:center;
+   color:#fff;
+
+}
+
+/*** End footer ***/
